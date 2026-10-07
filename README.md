@@ -88,7 +88,8 @@ git clone https://github.com/0xdm0n3y/phishguard.git
 cd phishguard
 
 python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
+source .venv/bin/activate # Linux
+.venv\Scripts\activate.bat # Windows
 
 pip install -r requirements.txt
 streamlit run app.py
@@ -104,6 +105,7 @@ cd phishguard
 
 python -m venv .venv
 source .venv/bin/activate
+.venv\Scripts\activate.bat
 
 pip install -r requirements.txt
 python train_model.py --data combined_phishing_dataset.csv
