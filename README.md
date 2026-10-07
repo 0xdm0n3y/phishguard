@@ -101,10 +101,15 @@ If you wanna train the model yourself, Use this sequence of commands:-
 ```
 git clone https://github.com/0xdm0n3y/phishguard.git
 cd phishguard
+
 python -m venv .venv
+source .venv/bin/activate
+
 pip install -r requirements.txt
 python train_model.py --data combined_phishing_dataset.csv
+
 # or use with feedback csv
+
 python train_model.py --data combined_phishing_dataset.csv --feedback feedback.csv
 streamlit run app.py
 ```
