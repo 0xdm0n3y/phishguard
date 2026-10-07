@@ -84,8 +84,8 @@ Reply-To domain differs from sender · SPF/DKIM/DMARC failure · lookalike brand
 ## Quick start
 
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/0xdm0n3y/phishguard.git
+cd phishguard
 
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
@@ -97,21 +97,16 @@ streamlit run app.py
 The trained `model.joblib` is included, so the app runs straight away. Use the **Demo** sidebar to load sample phishing and legitimate emails.
 
 ## Retraining the model
-
-Download a phishing email dataset (for example the Kaggle datasets listed under References) as a CSV with `text` and `label` columns (`1` = phishing, `0` = legitimate), then run:
-
-```bash
-python train_model.py --data combined_phishing_dataset.csv
+If you wanna train the model yourself, Use this sequence of commands:-
 ```
-
-Optional extras:
-
-```bash
-# add your own legitimate emails (.eml / .mbox) to reduce false alarms
-python train_model.py --data combined_phishing_dataset.csv --extra-legit ./my_emails
-
-# add labelled emails collected through the app's feedback buttons
+git clone https://github.com/0xdm0n3y/phishguard.git
+cd phishguard
+python -m venv .venv
+pip install -r requirements.txt
+python train_model.py --data combined_phishing_dataset.csv
+# or use with feedback csv
 python train_model.py --data combined_phishing_dataset.csv --feedback feedback.csv
+streamlit run app.py
 ```
 
 > The model is saved with scikit-learn `1.9.1`. If you train with a different version, update the pin in `requirements.txt` to match.
