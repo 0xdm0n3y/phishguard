@@ -10,15 +10,12 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
-Built for **Software Innovation Challenge 2026** · Kalaniketan Polytechnic College, Jabalpur
-
 [**Try the live demo →**](https://phishguard2026.streamlit.app/)
 
 </div>
 
 ---
 
-<!-- Add a screenshot of the app to docs/screenshot.png and it will show here -->
 <p align="center">
   <img src="docs/screenshot.png" alt="PhishGuard screenshot" width="850">
 </p>
@@ -145,12 +142,6 @@ phishguard/
 - [x] **Phase 2:** web app with paste / `.eml` input, rule engine, red flags and feedback buttons
 - [ ] **Phase 3 (in progress):** retest on fresh real emails, retrain with user feedback, publish limits and false-alarm rate
 - [ ] **Phase 4:** labelled Hindi/Hinglish set, BERT upgrade and SHAP/LIME check, API plus Gmail / browser add-on
-
-## Team
-
-**Team PhishGuard** · Software Innovation Challenge 2026 · Kalaniketan Polytechnic College, Jabalpur
-
-Dhairya · Abhiraj · Tejas · Ayush
 
 ## References
 
