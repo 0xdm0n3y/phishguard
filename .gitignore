@@ -1,1 +1,15 @@
+# runtime data
+feedback.csv
+*.csv
+
+# python
 __pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# editors / OS
+.vscode/
+.idea/
+.DS_Store
